@@ -1,0 +1,8 @@
+<h1>Current City is {{myCity}}</h1>
+<ul>
+  <li *ngFor="let customer of customers" (click)="selectCustomer(customer)">
+    {{customer.firstName}}  {{customer.lastName}} 
+  </li>
+</ul>
+
+<strong *ngIf="selectedCustomer">You've selected {{selectedCustomer.firstName}}</strong>
